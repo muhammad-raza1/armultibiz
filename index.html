@@ -20,11 +20,17 @@
       background: rgba(0,0,0,0.6);
       position: sticky;
       top: 0;
+      flex-wrap: wrap;
     }
 
     header .logo {
       font-size: 24px;
       font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -55,46 +61,50 @@
       font-size: 20px;
       color: #e0e0e0;
       max-width: 700px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    .hero .buttons {
+    .download-buttons {
       display: flex;
       gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
+    /* Unified button style */
     .btn {
-      padding: 12px 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
       border-radius: 8px;
       border: none;
       cursor: pointer;
       font-weight: bold;
       font-size: 16px;
-      transition: 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+      gap: 10px;
+      min-width: 200px;
+      text-align: center;
+      background-color: #d3d3d3; /* light grey */
+      color: #000000; /* black text */
     }
 
-    .btn-primary {
-      background-color: #6b6b73;
-      color: white;
-    }
-    .btn-primary:hover {
-      background-color: #302f37;
-    }
-
-    .btn-secondary {
-      background-color: white;
-      color: black;
-    }
-    .btn-secondary:hover {
-      background-color: #ddd;
+    .btn:hover {
+      background-color: #555555; /* dark grey */
+      color: #ffffff; /* white text */
     }
 
     .phone-preview {
-      margin-top: 60px;
+      margin-top: 40px;
     }
 
     .phone-preview img {
       max-width: 300px;
+      width: 100%;
+      height: auto;
       border-radius: 20px;
       box-shadow: 0 0 25px rgba(0,0,0,0.6);
     }
@@ -109,7 +119,7 @@
     .section h2 {
       font-size: 36px;
       margin-bottom: 20px;
-      color: #0d0d0d;
+      color: #fff;
     }
 
     .section p {
@@ -139,7 +149,7 @@
     .feature h3 {
       font-size: 20px;
       margin-bottom: 12px;
-      color: #272727;
+      color: #fff;
     }
     .feature p {
       font-size: 15px;
@@ -156,6 +166,85 @@
     footer a {
       color: #1c1c1f;
       text-decoration: none;
+    }
+
+    /* ------------------------------
+       RESPONSIVE DESIGN
+    -------------------------------*/
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+      }
+
+      header .logo {
+        margin-bottom: 10px;
+      }
+
+      nav {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin: 5px 10px;
+      }
+
+      .hero {
+        padding: 60px 15px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .btn {
+        font-size: 14px;
+        padding: 12px 20px;
+        min-width: 160px;
+      }
+
+      .section h2 {
+        font-size: 28px;
+      }
+
+      .section p {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .btn {
+        font-size: 13px;
+        padding: 10px 18px;
+        min-width: 140px;
+      }
+
+      .phone-preview img {
+        max-width: 220px;
+      }
+
+      .section h2 {
+        font-size: 24px;
+      }
+
+      .section p {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -177,10 +266,13 @@
     <p>Powered by <strong>A & R Multi Biz</strong>.  
     Pakistan’s first all-in-one app designed exclusively for CSS aspirants.  
     Prepare smarter with study material, practice tests, and progress tracking — anytime, anywhere.</p>
-    <div class="buttons">
-      <button class="btn btn-primary">Download App</button>
-      <button class="btn btn-secondary">Learn More</button>
+    
+    <!-- Download Buttons -->
+    <div class="download-buttons">
+      <a href="https://apps.apple.com/au/app/pak-imtehan/id6747534940" target="_blank" class="btn"> Download for iOS</a>
+      <a href="https://play.google.com/store/apps/details?id=com.saleemraza.pakimtehan" target="_blank" class="btn">🤖 Download for Android</a>
     </div>
+
     <div class="phone-preview">
       <img src="phone.png" alt="Pak Imtehan App Preview" />
     </div>
@@ -201,23 +293,23 @@
     <h2>Features of Pak Imtehan</h2>
     <div class="features">
       <div class="feature">
-        <h3>📚 Complete Syllabus</h3>
+        <h3>Complete Syllabus</h3>
         <p>Access notes and resources for every CSS subject, structured by syllabus.</p>
       </div>
       <div class="feature">
-        <h3>📝 Past Papers & Mock Tests</h3>
+        <h3>Past Papers & Mock Tests</h3>
         <p>Practice previous years’ papers and simulate real exam conditions.</p>
       </div>
       <div class="feature">
-        <h3>🎯 Personalized Study Plans</h3>
+        <h3>Personalized Study Plans</h3>
         <p>Create a tailored timetable to fit your learning style and pace.</p>
       </div>
       <div class="feature">
-        <h3>📊 Progress Tracking</h3>
+        <h3>Progress Tracking</h3>
         <p>Monitor strengths and weaknesses with smart analytics.</p>
       </div>
       <div class="feature">
-        <h3>💡 Expert Tips</h3>
+        <h3>Expert Tips</h3>
         <p>Learn strategies and writing techniques from CSS qualifiers.</p>
       </div>
     </div>
@@ -227,7 +319,7 @@
   <section class="section" id="contact">
     <h2>Contact Us</h2>
     <p>
-      📧 Email: <a href="mailto:support@armultibiz.com">support@armultibiz.com</a><br />
+      📧 Email: <a href="mailto:armultibiz@gmail.com">armultibiz@gmail.com</a><br />
       🌐 Website: <a href="https://www.armultibiz.com">www.armultibiz.com</a><br />
       📱 Download Pak Imtehan today and take the first step towards CSS success!
     </p>
