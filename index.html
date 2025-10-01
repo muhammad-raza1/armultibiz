@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A & R Multi Biz</title>
+  <title>Pak Imtehan - By A & R Multi Biz</title>
   <style>
     body {
       margin: 0;
@@ -17,7 +17,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 50px;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0,0,0,0.6);
       position: sticky;
       top: 0;
     }
@@ -44,17 +44,17 @@
     }
 
     .hero h1 {
-      font-size: 52px;
+      font-size: 56px;
       font-weight: 800;
       margin-bottom: 20px;
       color: #ffffff;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     }
 
     .hero p {
-      font-size: 18px;
+      font-size: 20px;
       color: #e0e0e0;
-      max-width: 600px;
+      max-width: 700px;
       margin-bottom: 30px;
     }
 
@@ -77,7 +77,6 @@
       background-color: #6c63ff;
       color: white;
     }
-
     .btn-primary:hover {
       background-color: #5548d6;
     }
@@ -86,7 +85,6 @@
       background-color: white;
       color: black;
     }
-
     .btn-secondary:hover {
       background-color: #ddd;
     }
@@ -98,100 +96,146 @@
     .phone-preview img {
       max-width: 300px;
       border-radius: 20px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
     }
 
-    .services {
-      background: linear-gradient(to right, #1a1a1a, #000000);
-      color: white;
-      padding: 60px 20px;
+    .section {
+      padding: 80px 20px;
       text-align: center;
-    }
-
-    .services h2 {
-      font-size: 36px;
-      margin-bottom: 40px;
-    }
-
-    .service-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
       max-width: 1000px;
       margin: 0 auto;
     }
 
-    .service {
-      padding: 25px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.05);
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-
-    .service:hover {
-      transform: translateY(-8px);
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .service h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
       color: #6c63ff;
     }
 
-    .service p {
+    .section p {
+      font-size: 18px;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature {
+      padding: 25px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-8px);
+      background: rgba(255,255,255,0.1);
+    }
+    .feature h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #6c63ff;
+    }
+    .feature p {
       font-size: 15px;
       color: #ccc;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.8);
+      padding: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+    footer a {
+      color: #6c63ff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="logo">A & R Multi Biz</div>
+    <div class="logo">Pak Imtehan</div>
     <nav>
       <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>A & R Multi Biz</h1>
-    <p>Take control of your money anytime. Pay online, send money and earn loyalty points with a digital wallet used by millions.</p>
+    <h1>Pak Imtehan</h1>
+    <p>Powered by <strong>A & R Multi Biz</strong>.  
+    Pakistan’s first all-in-one app designed exclusively for CSS aspirants.  
+    Prepare smarter with study material, practice tests, and progress tracking — anytime, anywhere.</p>
     <div class="buttons">
-      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-primary">Download App</button>
       <button class="btn btn-secondary">Learn More</button>
     </div>
     <div class="phone-preview">
-      <img src="phone.png" alt="Phone App Preview" />
+      <img src="phone.png" alt="Pak Imtehan App Preview" />
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service">
-        <h3>Pay Online</h3>
-        <p>Make payments without sharing your bank details.</p>
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+      At <strong>A & R Multi Biz</strong>, our mission is to empower students with innovative digital tools.  
+      We built <strong>Pak Imtehan</strong> to help CSS students organize their preparation, practice past papers, and track progress with ease.  
+      Our goal is simple — to make CSS exam preparation smarter, simpler, and more effective.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <h2>Features of Pak Imtehan</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>📚 Complete Syllabus</h3>
+        <p>Access notes and resources for every CSS subject, structured by syllabus.</p>
       </div>
-      <div class="service">
-        <h3>Send Money</h3>
-        <p>Send to a bank account or another customer instantly.</p>
+      <div class="feature">
+        <h3>📝 Past Papers & Mock Tests</h3>
+        <p>Practice previous years’ papers and simulate real exam conditions.</p>
       </div>
-      <div class="service">
-        <h3>Receive Money</h3>
-        <p>Get global payments through bank, email, or phone.</p>
+      <div class="feature">
+        <h3>🎯 Personalized Study Plans</h3>
+        <p>Create a tailored timetable to fit your learning style and pace.</p>
       </div>
-      <div class="service">
-        <h3>Loyalty Rewards</h3>
-        <p>Earn rewards with every transaction you make.</p>
+      <div class="feature">
+        <h3>📊 Progress Tracking</h3>
+        <p>Monitor strengths and weaknesses with smart analytics.</p>
+      </div>
+      <div class="feature">
+        <h3>💡 Expert Tips</h3>
+        <p>Learn strategies and writing techniques from CSS qualifiers.</p>
       </div>
     </div>
   </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      📧 Email: <a href="mailto:support@armultibiz.com">support@armultibiz.com</a><br />
+      🌐 Website: <a href="https://www.armultibiz.com">www.armultibiz.com</a><br />
+      📱 Download Pak Imtehan today and take the first step towards CSS success!
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 A & R Multi Biz | Pak Imtehan - All Rights Reserved
+  </footer>
 </body>
 </html>
